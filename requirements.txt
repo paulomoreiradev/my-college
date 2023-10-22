@@ -1,0 +1,4 @@
+psycopg==3.1.12
+Django==4.2.6
+django-admin-interface==0.26.1
+django-crispy-forms==2.1
