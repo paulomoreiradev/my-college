@@ -18,7 +18,7 @@ Após é necessário que baixe este repositório em sua máquina e isso pode ser
 * Via comando Git - abra seu terminal na pasta de onde quer baixar o projeto e digite o comando:
 
 ```bash
-git clone https://github.com/paulomoreiradev/mycollege --config core.autocrlf=input
+git clone https://github.com/paulomoreiradev/my-college --config core.autocrlf=input
 ```
 
 Assim, o repositório sera baixado na pasta de destino escolhida.
