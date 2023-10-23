@@ -14,5 +14,8 @@ python manage.py migrate
 echo "Creating superuser..."
 python manage.py createsuperuser --noinput --email admin@admin.com
 
+# Load the database
+python manage.py loaddata app.json
+
 # Start the Django development server
 python manage.py runserver 0.0.0.0:8000
