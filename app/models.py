@@ -11,7 +11,7 @@ class Disciplina(models.Model):
     nome = models.CharField(max_length=100)
     creditos = models.IntegerField()
     tipo = models.CharField(max_length=2, choices=TIPO_CHOICES)
-    requisito = models.ManyToManyField("self")
+    requisito = models.ManyToManyField("self", blank=True)
 
     def __str__(self):
         return self.nome

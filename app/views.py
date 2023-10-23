@@ -18,25 +18,25 @@ def sobre(request):
     semestre4 = Semestre.objects.get(id=4)
     disciplinas4 = semestre4.disciplinas.all()
 
-    semestre5 = Semestre.objects.get(id=11)
+    semestre5 = Semestre.objects.get(id=5)
     disciplinas5 = semestre5.disciplinas.all()
 
-    semestre6 = Semestre.objects.get(id=5)
+    semestre6 = Semestre.objects.get(id=6)
     disciplinas6 = semestre6.disciplinas.all()
 
-    semestre7_diurno = Semestre.objects.get(id=6)
+    semestre7_diurno = Semestre.objects.get(id=7)
     disciplinas7_diurno = semestre7_diurno.disciplinas.all()
 
-    semestre8_diurno = Semestre.objects.get(id=7)
+    semestre8_diurno = Semestre.objects.get(id=8)
     disciplinas8_diurno = semestre8_diurno.disciplinas.all()
 
-    semestre7_noturno = Semestre.objects.get(id=8)
+    semestre7_noturno = Semestre.objects.get(id=9)
     disciplinas7_noturno = semestre7_noturno.disciplinas.all()
 
-    semestre8_noturno = Semestre.objects.get(id=9)
+    semestre8_noturno = Semestre.objects.get(id=10)
     disciplinas8_noturno = semestre8_noturno.disciplinas.all()
 
-    semestre9_noturno = Semestre.objects.get(id=10)
+    semestre9_noturno = Semestre.objects.last()
     disciplinas9_noturno = semestre9_noturno.disciplinas.all()
 
     context = {

@@ -1,0 +1,580 @@
+[
+{
+  "model": "app.disciplina",
+  "pk": 1,
+  "fields": {
+    "codigo": "SMD0088",
+    "nome": "AUTORAÇÃO MULTIMÍDIA I",
+    "creditos": 64,
+    "tipo": "O",
+    "requisito": [
+      7,
+      11
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 2,
+  "fields": {
+    "codigo": "SMD0089",
+    "nome": "DESENHO I",
+    "creditos": 64,
+    "tipo": "O",
+    "requisito": [
+      25
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 3,
+  "fields": {
+    "codigo": "SMD0091",
+    "nome": "HISTÓRIA DO DESIGN",
+    "creditos": 64,
+    "tipo": "O",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 4,
+  "fields": {
+    "codigo": "SMD0094",
+    "nome": "INTRODUÇÃO A SISTEMAS E MÍDIAS DIGITAIS",
+    "creditos": 64,
+    "tipo": "O",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 5,
+  "fields": {
+    "codigo": "SMD0095",
+    "nome": "PROGRAMAÇÃO I",
+    "creditos": 64,
+    "tipo": "O",
+    "requisito": [
+      8,
+      10
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 6,
+  "fields": {
+    "codigo": "SMD0107",
+    "nome": "COGNIÇÃO E TECNOLOGIAS DIGITAIS",
+    "creditos": 64,
+    "tipo": "O",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 7,
+  "fields": {
+    "codigo": "SMD0105",
+    "nome": "COMUNICAÇÃO VISUAL I",
+    "creditos": 64,
+    "tipo": "O",
+    "requisito": [
+      1,
+      12,
+      15,
+      27,
+      29,
+      31
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 8,
+  "fields": {
+    "codigo": "SMD0106",
+    "nome": "MATEMÁTICA APLICADA À MULTIMÍDIA I",
+    "creditos": 64,
+    "tipo": "O",
+    "requisito": [
+      5
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 9,
+  "fields": {
+    "codigo": "SMD0093",
+    "nome": "NARRATIVAS MULTIMÍDIA",
+    "creditos": 64,
+    "tipo": "O",
+    "requisito": [
+      32
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 10,
+  "fields": {
+    "codigo": "SMD0096",
+    "nome": "PROGRAMAÇÃO II",
+    "creditos": 64,
+    "tipo": "O",
+    "requisito": [
+      5,
+      15,
+      24,
+      26,
+      28,
+      30
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 11,
+  "fields": {
+    "codigo": "SMD0097",
+    "nome": "AUTORAÇÃO MULTIMÍDIA II",
+    "creditos": 64,
+    "tipo": "O",
+    "requisito": [
+      1
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 12,
+  "fields": {
+    "codigo": "SMD0015",
+    "nome": "DESIGN DE INTERFACES GRÁFICAS",
+    "creditos": 64,
+    "tipo": "O",
+    "requisito": [
+      7
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 13,
+  "fields": {
+    "codigo": "SMD0108",
+    "nome": "INTERAÇÃO HUMANO-COMPUTADOR I",
+    "creditos": 64,
+    "tipo": "O",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 14,
+  "fields": {
+    "codigo": "SMD0109",
+    "nome": "INTRODUÇÃO À CIBERCULTURA",
+    "creditos": 64,
+    "tipo": "O",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 15,
+  "fields": {
+    "codigo": "SMD0092",
+    "nome": "PROJETO INTEGRADO I",
+    "creditos": 64,
+    "tipo": "O",
+    "requisito": [
+      10,
+      7,
+      18
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 16,
+  "fields": {
+    "codigo": "SMD0102",
+    "nome": "METODOLOGIA DE PESQUISA CIENTÍFICA",
+    "creditos": 64,
+    "tipo": "O",
+    "requisito": [
+      19,
+      20
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 17,
+  "fields": {
+    "codigo": "SMD0025",
+    "nome": "ÉTICA E POLÍTICA AUTORAL",
+    "creditos": 64,
+    "tipo": "O",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 18,
+  "fields": {
+    "codigo": "SMD0100",
+    "nome": "GESTÃO DE PROJETOS MULTIMÍDIA",
+    "creditos": 64,
+    "tipo": "O",
+    "requisito": [
+      15
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 19,
+  "fields": {
+    "codigo": "SMD0111",
+    "nome": "PROJETO DE TRABALHO FINAL",
+    "creditos": 64,
+    "tipo": "O",
+    "requisito": [
+      16,
+      23
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 20,
+  "fields": {
+    "codigo": "SMD0101",
+    "nome": "PROJETO INTEGRADO II",
+    "creditos": 64,
+    "tipo": "O",
+    "requisito": [
+      16
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 21,
+  "fields": {
+    "codigo": "SMDG0001",
+    "nome": "ATIVIDADES COMPLEMENTARES",
+    "creditos": 192,
+    "tipo": "O",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 22,
+  "fields": {
+    "codigo": "SMD0103",
+    "nome": "SEMINÁRIOS EM MULTIMÍDIA",
+    "creditos": 64,
+    "tipo": "O",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 23,
+  "fields": {
+    "codigo": "SMD0077",
+    "nome": "TRABALHO DE CONCLUSÃO DE CURSO",
+    "creditos": 128,
+    "tipo": "O",
+    "requisito": [
+      19
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 24,
+  "fields": {
+    "codigo": "SMD0030",
+    "nome": "ANÁLISE E PROJETO DE SISTEMAS",
+    "creditos": 64,
+    "tipo": "E",
+    "requisito": [
+      10,
+      33
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 25,
+  "fields": {
+    "codigo": "SMD0098",
+    "nome": "DESENHO II",
+    "creditos": 64,
+    "tipo": "E",
+    "requisito": [
+      2
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 26,
+  "fields": {
+    "codigo": "SMD0033",
+    "nome": "ESTRUTURA DE DADOS",
+    "creditos": 64,
+    "tipo": "E",
+    "requisito": [
+      10
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 27,
+  "fields": {
+    "codigo": "SMD0086",
+    "nome": "FOTOGRAFIA DIGITAL",
+    "creditos": 64,
+    "tipo": "E",
+    "requisito": [
+      7
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 28,
+  "fields": {
+    "codigo": "SMD0037",
+    "nome": "REDES DE COMPUTADORES",
+    "creditos": 64,
+    "tipo": "E",
+    "requisito": [
+      10
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 29,
+  "fields": {
+    "codigo": "SMD0090",
+    "nome": "SEMIÓTICA APLICADA",
+    "creditos": 64,
+    "tipo": "E",
+    "requisito": [
+      7
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 30,
+  "fields": {
+    "codigo": "SMD0099",
+    "nome": "BANCO DE DADOS I",
+    "creditos": 64,
+    "tipo": "E",
+    "requisito": [
+      10
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 31,
+  "fields": {
+    "codigo": "SMD0110",
+    "nome": "COMUNICAÇÃO VISUAL II",
+    "creditos": 64,
+    "tipo": "E",
+    "requisito": [
+      7
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 32,
+  "fields": {
+    "codigo": "SMD0032",
+    "nome": "DESIGN DE SOM",
+    "creditos": 64,
+    "tipo": "E",
+    "requisito": [
+      9
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 33,
+  "fields": {
+    "codigo": "SMD0055",
+    "nome": "ENGENHARIA DE SOFTWARE",
+    "creditos": 64,
+    "tipo": "E",
+    "requisito": [
+      24
+    ]
+  }
+},
+{
+  "model": "app.semestre",
+  "pk": 1,
+  "fields": {
+    "ano": 2023,
+    "semestre": 1,
+    "disciplinas": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "app.semestre",
+  "pk": 2,
+  "fields": {
+    "ano": 2023,
+    "semestre": 2,
+    "disciplinas": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ]
+  }
+},
+{
+  "model": "app.semestre",
+  "pk": 3,
+  "fields": {
+    "ano": 2023,
+    "semestre": 3,
+    "disciplinas": [
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+},
+{
+  "model": "app.semestre",
+  "pk": 4,
+  "fields": {
+    "ano": 2023,
+    "semestre": 4,
+    "disciplinas": [
+      16,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ]
+  }
+},
+{
+  "model": "app.semestre",
+  "pk": 5,
+  "fields": {
+    "ano": 2023,
+    "semestre": 5,
+    "disciplinas": [
+      32,
+      33,
+      30,
+      31
+    ]
+  }
+},
+{
+  "model": "app.semestre",
+  "pk": 6,
+  "fields": {
+    "ano": 2023,
+    "semestre": 6,
+    "disciplinas": [
+      17,
+      18
+    ]
+  }
+},
+{
+  "model": "app.semestre",
+  "pk": 7,
+  "fields": {
+    "ano": 2023,
+    "semestre": 7,
+    "disciplinas": [
+      19,
+      20
+    ]
+  }
+},
+{
+  "model": "app.semestre",
+  "pk": 8,
+  "fields": {
+    "ano": 2023,
+    "semestre": 8,
+    "disciplinas": [
+      21,
+      22,
+      23
+    ]
+  }
+},
+{
+  "model": "app.semestre",
+  "pk": 9,
+  "fields": {
+    "ano": 2023,
+    "semestre": 7,
+    "disciplinas": [
+      20
+    ]
+  }
+},
+{
+  "model": "app.semestre",
+  "pk": 10,
+  "fields": {
+    "ano": 2023,
+    "semestre": 8,
+    "disciplinas": [
+      19,
+      22
+    ]
+  }
+},
+{
+  "model": "app.semestre",
+  "pk": 11,
+  "fields": {
+    "ano": 2023,
+    "semestre": 9,
+    "disciplinas": [
+      21,
+      23
+    ]
+  }
+}
+]
