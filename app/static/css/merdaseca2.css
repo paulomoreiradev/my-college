@@ -17,6 +17,10 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #F071C0;
 }
 
+.link-texto {
+    font-weight: 700;
+}
+
 .btn {
     background-color: #1FFED0;
 }
@@ -33,4 +37,31 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 100%;
     width: 400px;
     background-color: #8584FF;
+}
+.activo {
+    background-color: #0B0A48;
+    color:#1FFED0;
+}
+.activo:hover {
+    background-color: #0B0A48;
+    color: #1FFED0;
+}
+
+.card-diurno {
+    background-color: #F071C0;
+    width: 350px;
+    height: 350px;
+    max-width: 100%;
+    border: 5px solid;
+    border-color: #0B0A48;
+    border-radius: 12px;
+}
+
+.card-diurno > .sol-diurno {
+    margin-top:2rem;
+    margin-left: 2rem;
+}
+
+.card-diurno > .bloco-diurno {
+    margin-top: -25px;
 }

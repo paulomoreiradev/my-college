@@ -5,33 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/merdaseca.css' %}">
+    <link rel="stylesheet" href="{% static 'css/merdaseca2.css' %}">
     <title>DigiEscolhas - Sobre o Curso</title>
 </head>
 <body>
 
   <header>
     <nav class="navbar navbar-expand-lg bg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/"><h1>DigiEscolhas</h1></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav navbar-links my-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Calculadora</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="{% url 'sobre' %}">Sobre o Curso</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'trilhas' %}">Trilhas</a>
-              </li>                  
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"><h1>DigiEscolhas</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav navbar-links my-0">
+            <li class="nav-item mx-2">
+              <a class="nav-link btn link-texto" href="{% url 'calculadora-turno' %}">Calculadora</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link btn link-texto" aria-current="page" href="{% url 'sobre-o-curso' %}">Sobre o Curso</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link btn link-texto activo" href="{% url 'trilhas' %}">Trilhas</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link btn link-texto" href="{% url 'sobre-o-projeto' %}">O Projeto</a>
+            </li>                     
+          </ul>
         </div>
-      </nav>        
+      </div>
+    </nav>       
   </header>
 
     <main>
@@ -118,10 +121,12 @@
             </div> {% endcomment %}
         <div class="d-flex justify-content-center gap-5 mt-5 flex-wrap">
 
-              <div class="border p-0 fundo-card-trilha">
-                <h5 class="text-center fundo-titulo-trilha py-2">Audiovisual e Animação</h5>
-                <p class="text-center mx-4">Essa trilha tem como objetivo capacitar os estudantes em diferentes meios de comunicação, usando recursos multimidiáticos na produção de projetos práticos, sendo eles formas de expressão e ferramentas de linguagem.</p>
-                <p class="text-center mx-4">Busca explorar os recursos tecnológicos, as ferramentas e os conhecimentos operacionais aplicados às áreas de produção artística, cultural e multimídia, para uso nas produções estudantis.</p>
+              <div class="border p-0 fundo-card-trilha d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="text-center fundo-titulo-trilha py-2">Audiovisual e Animação</h5>
+                  <p class="text-center mx-4">Essa trilha tem como objetivo capacitar os estudantes em diferentes meios de comunicação, usando recursos multimidiáticos na produção de projetos práticos, sendo eles formas de expressão e ferramentas de linguagem.</p>
+                  <p class="text-center mx-4">Busca explorar os recursos tecnológicos, as ferramentas e os conhecimentos operacionais aplicados às áreas de produção artística, cultural e multimídia, para uso nas produções estudantis.</p>
+                </div>
                 <div>
                   <h6 class="text-center">Disciplinas da Trilha</h6>
                   <ul class="list-group mx-2 mb-2">
@@ -138,7 +143,7 @@
                 </div>                
               </div>
 
-            <div class="border p-0 fundo-card-trilha">
+            {% comment %} <div class="border p-0 fundo-card-trilha">
               <h5 class="text-center fundo-titulo-trilha py-2 ">Jogos Digitais</h5>
               <p class="text-center mx-4">Essa trilha tem como objetivo apresentar uma visão integrada do desenvolvimento de jogos e aplicações interativas em geral, com uma perspectiva multirreferencial, contemplando computação, arte e cultura.</p>
               <p class="text-center mx-4">Busca explorar os recursos tecnológicos, as ferramentas e os conhecimentos operacionais aplicados às áreas de produção artística, cultural e multimídia, para uso nas produções estudantis.</p>
@@ -156,15 +161,38 @@
                   </li>
                 </ul>
               </div>
+            </div> {% endcomment %}
+            <div class="border rounded p-0 fundo-card-trilha d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="text-center fundo-titulo-trilha py-2">Jogos Digitais</h5>
+                <p class="text-center mx-4">Essa trilha tem como objetivo apresentar uma visão integrada do desenvolvimento de jogos e aplicações interativas em geral, com uma perspectiva multirreferencial, contemplando computação, arte e cultura.</p>
+                <p class="text-center mx-4">Os componentes curriculares da trilha oferecem múltiplas perspectivas sobre a interatividade em multimídia digital, contemplando aspectos teóricos e práticos no desenvolvimento de jogos.</p>
+              </div>
+              <div>
+                <h6 class="text-center">Disciplinas da Trilha</h6>
+                <ul class="list-group mx-2 mb-2">
+                  <li class="list-group-item">
+                    Disciplina 1
+                  </li>
+                  <li class="list-group-item">
+                    Disciplina 2
+                  </li>
+                  <li class="list-group-item">
+                    Disciplina 3
+                  </li>
+                </ul>
+              </div>                
             </div>
         </div>
 
         <div class="d-flex justify-content-center gap-5 mt-5 flex-wrap">
 
-          <div class="border rounded p-0 fundo-card-trilha">
-            <h5 class="text-center fundo-titulo-trilha py-2">Audiovisual e Animação</h5>
-            <p class="text-center mx-4">Essa trilha tem como objetivo capacitar os estudantes em diferentes meios de comunicação, usando recursos multimidiáticos na produção de projetos práticos, sendo eles formas de expressão e ferramentas de linguagem.</p>
-            <p class="text-center mx-4">Os componentes curriculares da trilha oferecem múltiplas perspectivas sobre a interatividade em multimídia digital, contemplando aspectos teóricos e práticos no desenvolvimento de jogos.</p>
+          <div class="border rounded p-0 fundo-card-trilha d-flex flex-column justify-content-between">
+            <div>
+              <h5 class="text-center fundo-titulo-trilha py-2">Sistemas Multimídias</h5>
+              <p class="text-center mx-4">Essa trilha tem como objetivo capacitar os alunos a analisar requisitos, projetar, implementar, testar, implantar, avaliar e manter sistemas computacionais para que atendam as necessidades do público alvo especificado.</p>
+              <p class="text-center mx-4">Busca desenvolver nos discentes a capacidade de representar as informações nesses sistemas de forma múltipla, como por meio de imagens, vídeos, linguagem sonora, sejam elas integradas ou isoladas em mídias interativas.</p>
+            </div>
             <div>
               <h6 class="text-center">Disciplinas da Trilha</h6>
               <ul class="list-group mx-2 mb-2">
@@ -181,10 +209,12 @@
             </div>                
           </div>
 
-        <div class="border p-0 fundo-card-trilha">
-          <h5 class="text-center fundo-titulo-trilha py-2">Audiovisual e Animação</h5>
-          <p class="text-center mx-4">Essa trilha tem como objetivo capacitar os estudantes em diferentes meios de comunicação, usando recursos multimidiáticos na produção de projetos práticos, sendo eles formas de expressão e ferramentas de linguagem.</p>
-          <p class="text-center mx-4">Busca explorar os recursos tecnológicos, as ferramentas e os conhecimentos operacionais aplicados às áreas de produção artística, cultural e multimídia, para uso nas produções estudantis.</p>
+        <div class="border p-0 fundo-card-trilha d-flex flex-column justify-content-between">
+          <div>
+            <h5 class="text-center fundo-titulo-trilha py-2">Design Digital Interativo</h5>
+            <p class="text-center mx-4">Essa trilha tem como objetivo aprofundar os conhecimentos sobre as bases teóricas e práticas do Design e do desenvolvimento de tecnologias digitais interativas adquiridos na formação básica do curso.</p>
+            <p class="text-center mx-4">Busca estimular uma visão crítica do processo de design, e de suas funções (prática, estética e simbólica). Abrange a interatividade no design digital e questões relativas a experiência do usuário.</p>
+          </div>
           <div>
             <h6 class="text-center">Disciplinas da Trilha</h6>
             <ul class="list-group mx-2 mb-2">

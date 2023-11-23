@@ -58,10 +58,13 @@ def sobre(request):
     
     # print(semestre1)
     # print(connection.queries)
-    return render (request, "sobre.html", context )
+    return render (request, "sobre-o-curso.html", context )
 
 def trilhas(request):
     return render (request, "trilhas.html")
 
 def o_projeto(request):
     return render(request, "sobre-o-projeto.html")
+
+def calculadora_turno(request):
+    return render(request, "calculadora-turno.html")
