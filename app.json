@@ -8,6 +8,9 @@
     "creditos": 64,
     "tipo": "O",
     "requisito": [
+      56,
+      62,
+      64,
       7,
       11
     ]
@@ -22,7 +25,8 @@
     "creditos": 64,
     "tipo": "O",
     "requisito": [
-      25
+      25,
+      109
     ]
   }
 },
@@ -34,7 +38,9 @@
     "nome": "HISTÓRIA DO DESIGN",
     "creditos": 64,
     "tipo": "O",
-    "requisito": []
+    "requisito": [
+      115
+    ]
   }
 },
 {
@@ -57,8 +63,13 @@
     "creditos": 64,
     "tipo": "O",
     "requisito": [
+      36,
+      41,
+      62,
+      92,
       8,
-      10
+      10,
+      116
     ]
   }
 },
@@ -70,7 +81,9 @@
     "nome": "COGNIÇÃO E TECNOLOGIAS DIGITAIS",
     "creditos": 64,
     "tipo": "O",
-    "requisito": []
+    "requisito": [
+      101
+    ]
   }
 },
 {
@@ -87,7 +100,13 @@
       15,
       27,
       29,
-      31
+      31,
+      48,
+      51,
+      63,
+      72,
+      81,
+      115
     ]
   }
 },
@@ -100,6 +119,7 @@
     "creditos": 64,
     "tipo": "O",
     "requisito": [
+      72,
       5
     ]
   }
@@ -113,7 +133,10 @@
     "creditos": 64,
     "tipo": "O",
     "requisito": [
-      32
+      32,
+      44,
+      52,
+      103
     ]
   }
 },
@@ -131,7 +154,17 @@
       24,
       26,
       28,
-      30
+      30,
+      48,
+      73,
+      83,
+      86,
+      87,
+      95,
+      96,
+      97,
+      106,
+      107
     ]
   }
 },
@@ -144,7 +177,8 @@
     "creditos": 64,
     "tipo": "O",
     "requisito": [
-      1
+      1,
+      99
     ]
   }
 },
@@ -157,7 +191,8 @@
     "creditos": 64,
     "tipo": "O",
     "requisito": [
-      7
+      7,
+      117
     ]
   }
 },
@@ -169,7 +204,10 @@
     "nome": "INTERAÇÃO HUMANO-COMPUTADOR I",
     "creditos": 64,
     "tipo": "O",
-    "requisito": []
+    "requisito": [
+      53,
+      75
+    ]
   }
 },
 {
@@ -192,9 +230,10 @@
     "creditos": 64,
     "tipo": "O",
     "requisito": [
-      10,
       7,
-      18
+      10,
+      18,
+      101
     ]
   }
 },
@@ -207,6 +246,7 @@
     "creditos": 64,
     "tipo": "O",
     "requisito": [
+      37,
       19,
       20
     ]
@@ -307,8 +347,8 @@
     "creditos": 64,
     "tipo": "E",
     "requisito": [
-      10,
-      33
+      33,
+      10
     ]
   }
 },
@@ -321,7 +361,9 @@
     "creditos": 64,
     "tipo": "E",
     "requisito": [
-      2
+      45,
+      2,
+      111
     ]
   }
 },
@@ -360,7 +402,9 @@
     "creditos": 64,
     "tipo": "E",
     "requisito": [
-      10
+      10,
+      96,
+      106
     ]
   }
 },
@@ -373,7 +417,8 @@
     "creditos": 64,
     "tipo": "E",
     "requisito": [
-      7
+      7,
+      103
     ]
   }
 },
@@ -386,7 +431,8 @@
     "creditos": 64,
     "tipo": "E",
     "requisito": [
-      10
+      10,
+      99
     ]
   }
 },
@@ -412,6 +458,7 @@
     "creditos": 64,
     "tipo": "E",
     "requisito": [
+      71,
       9
     ]
   }
@@ -425,7 +472,1070 @@
     "creditos": 64,
     "tipo": "E",
     "requisito": [
+      67,
       24
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 34,
+  "fields": {
+    "codigo": "ED0115",
+    "nome": "ADMINISTRAÇÃO MERCADOLÓGICA I",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 35,
+  "fields": {
+    "codigo": "SMD0038",
+    "nome": "ÁLGEBRA COMPUTACIONAL PARA PROGRAMAÇÃO",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 36,
+  "fields": {
+    "codigo": "SMD0029",
+    "nome": "AMBIENTES VIRTUAIS DE APRENDIZAGEM",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      5
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 37,
+  "fields": {
+    "codigo": "SMD0121",
+    "nome": "ANÁLISE DE DESEMPENHO",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      16
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 38,
+  "fields": {
+    "codigo": "SMD0066",
+    "nome": "AUTORACAO DE MÍDIA DE ARMAZENAMENTO LOCAL",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 39,
+  "fields": {
+    "codigo": "SMD0058",
+    "nome": "BANCO DE DADOS APLICADO À MULTIMÍDIA",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 40,
+  "fields": {
+    "codigo": "SMD0076",
+    "nome": "CIBERCULTURA E EDUCAÇÃO: NOVAS PRÁTICAS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 41,
+  "fields": {
+    "codigo": "SMD0114",
+    "nome": "COMPUTAÇÃO FÍSICA",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      5
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 42,
+  "fields": {
+    "codigo": "SMD0080",
+    "nome": "COMPUTAÇÃO GRÁFICA",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      50,
+      87
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 43,
+  "fields": {
+    "codigo": "SMD0123",
+    "nome": "COMPUTAÇÃO MÓVEL E UBÍQUA",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      96
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 44,
+  "fields": {
+    "codigo": "SMD0031",
+    "nome": "COMUNICAÇÃO EM NOVAS MÍDIAS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      9
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 45,
+  "fields": {
+    "codigo": "SMD0057",
+    "nome": "CONCEPÇÃO DE CENÁRIOS E DE PERSONAGENS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      25
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 46,
+  "fields": {
+    "codigo": "SMD0039",
+    "nome": "CULTURA DE JOGOS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 47,
+  "fields": {
+    "codigo": "SMD0065",
+    "nome": "DESENVOLVIMENTO DE APLICACOES DISTRIBUÍDAS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      106
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 48,
+  "fields": {
+    "codigo": "SMD0078",
+    "nome": "DESENVOLVIMENTO DE JOGOS CASUAIS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      7,
+      10
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 49,
+  "fields": {
+    "codigo": "SMD0075",
+    "nome": "DESENVOLVIMENTO DE MATERIAL DIDÁTICO EXPERIMENTAL E TREINAMENTO DE HABILIDADES",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 50,
+  "fields": {
+    "codigo": "SMD0079",
+    "nome": "DESENVOLVIMENTO DE MOTORES GRÁFICOS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      42
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 51,
+  "fields": {
+    "codigo": "SMD0127",
+    "nome": "DESIGN DE IDENTIDADE DE MARCA",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      7
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 52,
+  "fields": {
+    "codigo": "SMD0023",
+    "nome": "DESIGN DE JOGOS DIGITAIS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      9
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 53,
+  "fields": {
+    "codigo": "SMD0130",
+    "nome": "DESIGN EMOCIONAL",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      13
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 54,
+  "fields": {
+    "codigo": "SMD0024",
+    "nome": "DESIGN INSTRUCIONAL",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 55,
+  "fields": {
+    "codigo": "PRG0005",
+    "nome": "DIFERENÇA E ENFRENTAMENTO PROFISSIONAL NAS DESIGUALDADES SOCIAIS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 56,
+  "fields": {
+    "codigo": "SMD0056",
+    "nome": "DIREÇÃO DE ARTE PARA MULTIMÍDIA",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      1
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 57,
+  "fields": {
+    "codigo": "SMD0027",
+    "nome": "EDIÇÃO AUDIOVISUAL",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      93,
+      118
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 58,
+  "fields": {
+    "codigo": "PRG0003",
+    "nome": "EDUCAÇÃO AMBIENTAL",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 59,
+  "fields": {
+    "codigo": "SMD0008",
+    "nome": "EDUCAÇÃO, COGNICAO E TECNOLOGIAS DIGITAIS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 60,
+  "fields": {
+    "codigo": "PRG0004",
+    "nome": "EDUCAÇÃO EM DIREITOS HUMANOS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 61,
+  "fields": {
+    "codigo": "SMD0083",
+    "nome": "EDUCOMUNICAÇÃO",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 62,
+  "fields": {
+    "codigo": "SMD0040",
+    "nome": "EXPERIMENTOS EM MULTIMÍDIA I",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      1,
+      5
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 63,
+  "fields": {
+    "codigo": "SMD0084",
+    "nome": "EXPERIMENTOS EM TIPOGRAFIA DIGITAL",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      7
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 64,
+  "fields": {
+    "codigo": "SMD0034",
+    "nome": "FERRAMENTAS DE MODELAGEM TRIDIMENSIONAL I",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      65,
+      1,
+      118
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 65,
+  "fields": {
+    "codigo": "SMD0131",
+    "nome": "FERRAMENTAS DE MODELAGEM TRIDIMENSIONAL II",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      64
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 66,
+  "fields": {
+    "codigo": "SMD0041",
+    "nome": "FILOSOFIA DA TECNOLOGIA",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 67,
+  "fields": {
+    "codigo": "SMD0085",
+    "nome": "FRAMEWORKS DE SOFTWARE",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      33
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 68,
+  "fields": {
+    "codigo": "SMD0013",
+    "nome": "FUNDAMENTOS DE MATERIAL DIDATICO PARA ED A DISTÂNCIA",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 69,
+  "fields": {
+    "codigo": "SMD0042",
+    "nome": "GERÊNCIA DE PROJETOS DE SOFTWARE",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 70,
+  "fields": {
+    "codigo": "SMD0021",
+    "nome": "GESTÃO DE NEGOCIOS EM MULTIMÍDIA",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 71,
+  "fields": {
+    "codigo": "SMD0120",
+    "nome": "IDENTIDADE SONORA DE MARCAS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      32
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 72,
+  "fields": {
+    "codigo": "SMD0112",
+    "nome": "INSTALAÇÕES MULTIMÍDIA",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      7,
+      8
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 73,
+  "fields": {
+    "codigo": "SMD0054",
+    "nome": "INTELIGÊNCIA COMPUTACIONAL APLICADA A JOGOS I",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      74,
+      10
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 74,
+  "fields": {
+    "codigo": "SMD0081",
+    "nome": "INTELIGÊNCIA COMPUTACIONAL APLICADA A JOGOS II",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      73
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 75,
+  "fields": {
+    "codigo": "SMD0117",
+    "nome": "INTERAÇÃO HUMANO-COMPUTADOR II",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      13
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 76,
+  "fields": {
+    "codigo": "SMD0044",
+    "nome": "INTRODUÇÃO À COMPUTAÇÃO MÓVEL E UBÍQUA",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 77,
+  "fields": {
+    "codigo": "SMD0132",
+    "nome": "INTRODUÇÃO À TUTORIA PARA EDUCAÇÃO ON-LINE",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 78,
+  "fields": {
+    "codigo": "SMD0074",
+    "nome": "JOGOS DISTRIBUÍDOS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 79,
+  "fields": {
+    "codigo": "SMD0073",
+    "nome": "JOGOS MULTIPLATAFORMA",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      80
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 80,
+  "fields": {
+    "codigo": "SMD0082",
+    "nome": "JOGOS PARA CONSOLE",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      79
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 81,
+  "fields": {
+    "codigo": "SMD0113",
+    "nome": "LABORATÓRIO DE CRIATIVIDADE",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      7
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 82,
+  "fields": {
+    "codigo": "SMD0133",
+    "nome": "LABORATÓRIO DE COMPUTAÇÃO GRÁFICA",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 83,
+  "fields": {
+    "codigo": "SMD0028",
+    "nome": "LABORATÓRIO DE PROGRAMAÇÃO",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      10
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 84,
+  "fields": {
+    "codigo": "HLL0077",
+    "nome": "LÍNGUA BRASILEIRA DE SINAIS – LIBRAS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 85,
+  "fields": {
+    "codigo": "SMD0016",
+    "nome": "LINGUAGEM AUDIOVISUAL",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 86,
+  "fields": {
+    "codigo": "SMD0045",
+    "nome": "LINGUAGEM DE PROGRAMAÇÃO SCRIPT",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      10
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 87,
+  "fields": {
+    "codigo": "SMD0035",
+    "nome": "MATEMÁTICA E FÍSICA PARA JOGOS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      10,
+      42
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 88,
+  "fields": {
+    "codigo": "SMD0115",
+    "nome": "MÉTODOS E TÉCNICAS NA PESQUISA TRANSDISCIPLINAR",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 89,
+  "fields": {
+    "codigo": "SMD0059",
+    "nome": "MÍDIAS DIGITAIS E MATEMÁTICA",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 90,
+  "fields": {
+    "codigo": "SMD0046",
+    "nome": "MITOLOGIAS UNIVERSAIS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 91,
+  "fields": {
+    "codigo": "SMD0019",
+    "nome": "MITOS E ARQUETIPOS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 92,
+  "fields": {
+    "codigo": "SMD0047",
+    "nome": "PROCESSAMENTO DIGITAL DE AUDIO",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      5
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 93,
+  "fields": {
+    "codigo": "SMD0036",
+    "nome": "PRODUÇÃO AUDIOVISUAL",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      57
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 94,
+  "fields": {
+    "codigo": "SMD0124",
+    "nome": "PRODUÇÃO AUDIOVISUAL PARA CRIANÇAS E ADOLESCENTES",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 95,
+  "fields": {
+    "codigo": "SMD0017",
+    "nome": "PROGRAMAÇÃO ORIENTADA A OBJETOS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      10
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 96,
+  "fields": {
+    "codigo": "SMD0122",
+    "nome": "PROGRAMAÇÃO PARA DISPOSITIVOS MÓVEIS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      10,
+      28,
+      43
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 97,
+  "fields": {
+    "codigo": "SMD0053",
+    "nome": "PROGRAMAÇÃO PARA JOGOS I",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      10,
+      98
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 98,
+  "fields": {
+    "codigo": "SMD0061",
+    "nome": "PROGRAMAÇÃO PARA JOGOS II",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      97
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 99,
+  "fields": {
+    "codigo": "SMD0052",
+    "nome": "PROGRAMAÇÃO PARA WEB I",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      11,
+      30,
+      100
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 100,
+  "fields": {
+    "codigo": "SMD0069",
+    "nome": "PROGRAMAÇÃO PARA WEB II",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      99
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 101,
+  "fields": {
+    "codigo": "SMD0125",
+    "nome": "PROJETOS PARA EDUCAÇÃO ON-LINE",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      6,
+      15
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 102,
+  "fields": {
+    "codigo": "SMD0020",
+    "nome": "PROTOTIPAÇAO DE JOGOS TRIDIMENSIONAIS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 103,
+  "fields": {
+    "codigo": "SMD0051",
+    "nome": "REDAÇÃO PARA MÍDIAS DIGITAIS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      9,
+      29
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 104,
+  "fields": {
+    "codigo": "PRG0002",
+    "nome": "RELAÇOES ETNICO-RACIAIS E AFRICANIDADES",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 105,
+  "fields": {
+    "codigo": "RM0964",
+    "nome": "RENDERIZAÇÃO EM TEMPO REAL",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 106,
+  "fields": {
+    "codigo": "SMD0050",
+    "nome": "SISTEMAS DISTRIBUÍDOS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      10,
+      28,
+      47
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 107,
+  "fields": {
+    "codigo": "SMD0070",
+    "nome": "SISTEMAS EMBARCADOS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      10
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 108,
+  "fields": {
+    "codigo": "SMD0006",
+    "nome": "SOCIEDADE, CULTURA E TECNOLOGIA",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 109,
+  "fields": {
+    "codigo": "SMD0049",
+    "nome": "TÉCNICAS DE ANIMAÇÃO ANALÓGICA",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      2,
+      110,
+      112
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 110,
+  "fields": {
+    "codigo": "SMD0072",
+    "nome": "TÉCNICAS DE ANIMACAO DIGITAL I",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      109
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 111,
+  "fields": {
+    "codigo": "SMD0129",
+    "nome": "TÉCNICAS DE ANIMAÇÃO 2D",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      25
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 112,
+  "fields": {
+    "codigo": "SMD0128",
+    "nome": "TÉCNICAS DE ANIMAÇÃO 3D I",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      109,
+      113
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 113,
+  "fields": {
+    "codigo": "SMD0126",
+    "nome": "TÉCNICAS DE ANIMAÇÃO 3D II",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      112
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 114,
+  "fields": {
+    "codigo": "SMD0116",
+    "nome": "TECNODOCÊNCIA E ANIMAÇÃO",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": []
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 115,
+  "fields": {
+    "codigo": "SMD0118",
+    "nome": "TEORIA E CRÍTICA DO DESIGN",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      3,
+      7
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 116,
+  "fields": {
+    "codigo": "SMD0048",
+    "nome": "TESTE DE SOFTWARE APLICADO",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      5
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 117,
+  "fields": {
+    "codigo": "SMD0119",
+    "nome": "TÓPICOS AVANÇADOS EM DESIGN DE INTERFACES GRÁFICAS",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      12
+    ]
+  }
+},
+{
+  "model": "app.disciplina",
+  "pk": 118,
+  "fields": {
+    "codigo": "SMD0071",
+    "nome": "VIDEOGRAFISMO",
+    "creditos": 64,
+    "tipo": "OP",
+    "requisito": [
+      57,
+      64
     ]
   }
 },

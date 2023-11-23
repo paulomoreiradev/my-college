@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    background-color: #F5F5F5;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito';
+    font-weight: 700;
+}
+.navbar {
+    background-color: #F071C0;
+}
+
+.btn {
+    background-color: #1FFED0;
+}
+
+.bg-verde {
+    background-color: #8584FF;
+}
+
+.fundo-titulo-trilha{
+    background-color: #0B0A48;
+    color: white;
+}
+.fundo-card-trilha {
+    max-width: 100%;
+    width: 400px;
+    background-color: #8584FF;
+}

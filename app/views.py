@@ -38,6 +38,8 @@ def sobre(request):
 
     semestre9_noturno = Semestre.objects.last()
     disciplinas9_noturno = semestre9_noturno.disciplinas.all()
+    
+    disciplinas = Disciplina.objects.all()
 
     context = {
         'disciplinas1': disciplinas1, 
@@ -51,6 +53,7 @@ def sobre(request):
         'disciplinas7_noturno': disciplinas7_noturno,
         'disciplinas8_noturno': disciplinas8_noturno,
         'disciplinas9_noturno': disciplinas9_noturno,
+        'disciplinas': disciplinas,
         }
     
     # print(semestre1)
@@ -60,3 +63,5 @@ def sobre(request):
 def trilhas(request):
     return render (request, "trilhas.html")
 
+def o_projeto(request):
+    return render(request, "sobre-o-projeto.html")

@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/merdaseca.css' %}">
     <title>DigiEscolhas - Sobre o Curso</title>
 </head>
 <body>
@@ -21,14 +21,14 @@
               <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav navbar-links my-0">
                   <li class="nav-item">
+                    <a class="nav-link" href="#">Calculadora</a>
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="{% url 'sobre' %}">Sobre o Curso</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="{% url 'trilhas' %}">Trilhas</a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="#">Calculadora</a>
-                </li>
+                  </li>                  
                 </ul>
               </div>
             </div>
@@ -330,9 +330,483 @@
           </div>
         </div>
       </div>
-    </div>
-        
+    </div>        
     </section>
+
+    <section class="container mt-5">
+      <h2 class="text-center mb-5">Disciplinas Optativas</h2>
+      <p class="text-center">Abaixo você encontrará a lista de disciplinas optativas ofertadas para o curso de Sistemas e Mídias Digitais.</p>
+      <p class="text-center">Porém, todo aluno tem direito a cursar 128h de Optativas Livres, caso deseje, que englobam, basicamente, qualquer disciplina ofertada na universidade.</p>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOptativas" aria-expanded="false" aria-controls="panelsStayOpen-collapseOptativas">
+              Disciplinas Optativas
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOptativas" class="accordion-collapse collapse" style="">
+            <div class="accordion-body">
+              <div>
+                <ul class="list-group">
+                  {% for disciplina in  disciplinas %}
+                  
+                    {% if disciplina.tipo == 'OP' %}
+                      <li class="list-group-item">
+                        {{disciplina.nome}}
+                      </li>
+                    {% endif %}
+                 
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-5">
+      <h2 class="text-center mb-5">Atividades Complementares</h2>
+
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseHoras1" aria-expanded="false" aria-controls="panelsStayOpen-collapseHoras1">
+              Complementar em Iniciação à Docência, Pesquisa e/ou Extensão
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseHoras1" class="accordion-collapse collapse" style="">
+            <div class="accordion-body">
+              <div>
+                <h6 class="text-center my-3">O limite máximo de acumulação de horas em atividades Iniciação à Docência, à Pesquisa e/ou à Extensão é de 96h.</h3>
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th class="text-center font-bold">Atividade</td>
+                      <th class="text-center font-bold">Limite de Aproveitamento*</td>
+                      <th class="text-center font-bold">Documentos Comprobatórios</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center">Monitoria de Iniciação à Docência / Bolsa do PAIP</td>
+                      <td class="text-center">Até 96h no curso</td>
+                      <td class="text-center">Certificado emitido pela PROGRAD</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">Bolsa de Extensão</td>
+                      <td class="text-center">Até 96h</td>
+                      <td class="text-center">Declaração emitida pelo órgão provedor da bolsa</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">Participação em docência ensino fundamental e médio</td>
+                      <td class="text-center">Até 64h no curso</td>
+                      <td class="text-center">Declaração do empregador (com CNPJ) ou carteira de trabalho</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">Iniciação científica/PET</td>
+                      <td class="text-center">Até 96h no curso</td>
+                      <td class="text-center">Certificado emitido pela Pró-Reitoria ou órgão de fomento correspondente, ou declaração do orientador</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">Projeto social</td>
+                      <td class="text-center">Até 32h</td>
+                      <td class="text-center">Declaração da coordenação do projeto</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">Curso de extensão (exceto curso de línguas nas Casas de Cultura)</td>
+                      <td class="text-center">Até 64h</td>
+                      <td class="text-center">Certificado ou declaração da entidade organizadora</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">Atividades de extensão oferecidas por outras instituições</td>
+                      <td class="text-center">Até 32h</td>
+                      <td class="text-center">Certificado ou declaração da entidade organizadora</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">Grupo de Estudo / Aprendizagem cooperativa</td>
+                      <td class="text-center">Até 32h</td>
+                      <td class="text-center">Declaração do prof.-
+                        orientador e/ou certificado
+                        emitidos pela PROGRAD
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">Participação em Projeto de Pesquisa</td>
+                      <td class="text-center">Até 20h</td>
+                      <td class="text-center">Declaração do prof.
+                        responsável pelo projeto
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">Monitoria voluntária não cadastrada na Prograd</td>
+                      <td class="text-center">Até 64h</td>
+                      <td class="text-center">Declaração do prof.
+                        responsável pela disciplina
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h6 class="text-center my-3">*Limite de aproveitamento para cada ocorrência das atividades indicadas.</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseHoras2" aria-expanded="false" aria-controls="panelsStayOpen-collapseHoras2">
+              Complementar em Atividades Artístico-Culturais e Esportivas
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseHoras2" class="accordion-collapse collapse" style="">
+            <div class="accordion-body">
+              <div>
+                <h6 class="text-center my-3">O limite máximo de acumulação de horas em atividades Artístico-culturais e Esportivas é de 80h.</h3>
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th class="text-center font-bold">Atividade</td>
+                        <th class="text-center font-bold">Limite de Aproveitamento*</td>
+                        <th class="text-center font-bold">Documentos Comprobatórios</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center">Exposição</td>
+                        <td class="text-center">Até 12h</td>
+                        <td class="text-center">Ticket da exposição</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Visita ao Museu</td>
+                        <td class="text-center">Até 12h</td>
+                        <td class="text-center">Ticket do museu</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Peça de teatro</td>
+                        <td class="text-center">Até 12h</td>
+                        <td class="text-center">Ticket do teatro</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Recital</td>
+                        <td class="text-center">Até 12h</td>
+                        <td class="text-center">Ticket do evento</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Cine cultural</td>
+                        <td class="text-center">Até 12h</td>
+                        <td class="text-center">Ticket do cinema</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Campeonatos Esportivos</td>
+                        <td class="text-center">Até 4h</td>
+                        <td class="text-center">Comprovante de participação</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Produção cultural (curtas,
+                          musicais, peças teatrais etc.)</td>
+                        <td class="text-center">Até 32h</td>
+                        <td class="text-center">Comprovante de participação</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <h6 class="text-center my-3">*Limite de aproveitamento para cada ocorrência das atividades indicadas.</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseHoras3" aria-expanded="false" aria-controls="panelsStayOpen-collapseHoras3">
+              Complementar em Participação e/ou Organização de Eventos
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseHoras3" class="accordion-collapse collapse" style="">
+            <div class="accordion-body">
+              <div>
+                <h6 class="text-center my-3">O limite máximo de acumulação de horas em atividades de Participação e/ou
+                  Organização de Eventos é de 32h.</h3>
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th class="text-center font-bold">Atividade</td>
+                        <th class="text-center font-bold">Limite de Aproveitamento*</td>
+                        <th class="text-center font-bold">Documentos Comprobatórios</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center">Palestras e/ou mini-cursos
+                          (incluindo extensão)
+                          específicos da área de
+                          atuação do curso -
+                          ministrados</td>
+                        <td class="text-center">Até 32h</td>
+                        <td class="text-center">Certificado ou declaração da
+                          organização do evento</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Palestras e/ou mini-cursos
+                          específicos da área de
+                          atuação do curso -
+                          participação</td>
+                        <td class="text-center">Até 24h</td>
+                        <td class="text-center">Certificado ou declaração da
+                          organização do evento</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Participações em eventos **</td>
+                        <td class="text-center">Até 20 horas por evento,
+                          limitado a 32h</td>
+                        <td class="text-center">Certificado ou declaração da
+                          organização do evento</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Organização de Palestras e
+                          Eventos</td>
+                        <td class="text-center">Até 32h</td>
+                        <td class="text-center">Certificado / declaração</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Apresentação de trabalhos
+                          em eventos
+                          acadêmicos/científicos
+                          (incluindo apresentações não
+                          obrigatórias nos EU)</td>
+                        <td class="text-center">Até 4h por trabalho, limitado
+                          a 12h totais</td>
+                        <td class="text-center">Certificado emitido pela
+                          organização do evento</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <h6 class="text-center my-3">*Limite de aproveitamento para cada ocorrência das atividades indicadas.</h6>
+                  <h6 class="text-center my-3">** Não cumulativo com participação em palestras e/ou mini-cursos neste evento</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseHoras4" aria-expanded="false" aria-controls="panelsStayOpen-collapseHoras4">
+              Complementar em Experiências Ligadas à Formação Profissional
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseHoras4" class="accordion-collapse collapse" style="">
+            <div class="accordion-body">
+              <div>
+                <h6 class="text-center my-3">O limite máximo de acumulação de horas em atividades de Experiências ligadas à
+                  Formação Profissional e/ou Correlatas é de 64 horas.</h3>
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th class="text-center font-bold">Atividade</td>
+                        <th class="text-center font-bold">Limite de Aproveitamento*</td>
+                        <th class="text-center font-bold">Documentos Comprobatórios</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center">Curso de aperfeiçoamento
+                          técnico</td>
+                        <td class="text-center">Até 20h por curso, limitado a
+                          40h</td>
+                        <td class="text-center">Certificado ou declaração da
+                          entidade organizadora</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Certificação específica</td>
+                        <td class="text-center">Até 40h por módulo, limitado
+                          a 64 horas</td>
+                        <td class="text-center">Certificado emitido pela
+                          empresa</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Visita técnica externa</td>
+                        <td class="text-center">Até 12h</td>
+                        <td class="text-center">Declaração do professor ou
+                          responsável</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Vivência profissional – área
+                          correlata ao curso</td>
+                        <td class="text-center">Limitado a 64h</td>
+                        <td class="text-center">Declaração do empregador
+                          (com CNPJ) ou carteira de
+                          trabalho</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Estágio supervisionado não
+                          obrigatório **</td>
+                        <td class="text-center">Limitado a 64h</td>
+                        <td class="text-center">Documentação emitida pela
+                          Agência de Estágios da UFC</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Vivência profissional – outras
+                          áreas</td>
+                        <td class="text-center">Até 4h por semestre, limitado
+                          a 20h</td>
+                        <td class="text-center">Declaração do empregador
+                          (com CNPJ) ou carteira de
+                          trabalho</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Curso de língua estrangeira</td>
+                        <td class="text-center">20% da carga horária do
+                          curso de língua estrangeira</td>
+                        <td class="text-center">Certificado</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Disciplinas de outros cursos
+                          ou instituições de ens.
+                          superior***</td>
+                        <td class="text-center">Até 20h por disciplina</td>
+                        <td class="text-center">Histórico escolar ou
+                          declaração do professor</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <h6 class="text-center my-3">* Limite de aproveitamento para cada ocorrência das atividades indicadas.</h6>
+                  <h6 class="text-center my-3">** Necessário formalizar atividade de Estágio junto à <strong>Agência de Estágios da UFC</strong>. Não serão
+                    mais aceitas declarações emitidas pela empresa/instituição concedente do estágio</h6>
+                  <h6 class="text-center my-3">*** Desde que não aproveitadas como disciplinas livres</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseHoras5" aria-expanded="false" aria-controls="panelsStayOpen-collapseHoras5">
+              Complementar em Produção Técnica e/ou Científica
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseHoras5" class="accordion-collapse collapse" style="">
+            <div class="accordion-body">
+              <div>
+                <h6 class="text-center my-3">O limite máximo de acumulação de horas em atividades de Produção Técnica e/ou
+                  Científica é de 96 horas.</h3>
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th class="text-center font-bold">Atividade</td>
+                        <th class="text-center font-bold">Limite de Aproveitamento*</td>
+                        <th class="text-center font-bold">Documentos Comprobatórios</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center">Publicação de trabalhos
+                          científicos - completo</td>
+                        <td class="text-center">Até 48h por trabalho,
+                          limitado a 96h</td>
+                        <td class="text-center">Certificado emitido pela
+                          organização do evento ou
+                          revista</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Publicação de trabalhos
+                          científicos – resumo (exceto
+                          E.U. da UFC)</td>
+                        <td class="text-center">Até 20h por trabalho,
+                          limitado a 60h</td>
+                        <td class="text-center">Certificado emitido pela
+                          organização do evento</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Monografia publicada em
+                          outro curso</td>
+                        <td class="text-center">Até 20h</td>
+                        <td class="text-center">Declaração do prof.-
+                          orientador ou coordenação
+                          do curso correspondente</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">Projeto de desenvolvimento
+                          de produto</td>
+                        <td class="text-center">Até 32h por projeto, limitado
+                          a 3 projetos</td>
+                        <td class="text-center">Declaração de prof. ou
+                          empregador</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <h6 class="text-center my-3">*Limite de aproveitamento para cada ocorrência das atividades indicadas.</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseHoras6" aria-expanded="false" aria-controls="panelsStayOpen-collapseHoras6">
+              Complementar em Viviência e Gestão
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseHoras6" class="accordion-collapse collapse" style="">
+            <div class="accordion-body">
+              <div>
+                <h6 class="text-center my-3">O limite máximo de acumulação de horas em atividades de Vivências de Gestão é de 48
+                  horas.</h3>
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th class="text-center font-bold">Atividade</td>
+                        <th class="text-center font-bold">Limite de Aproveitamento*</td>
+                        <th class="text-center font-bold">Documentos Comprobatórios</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center">Vivência de Gestão (incluindo
+                          representações)</td>
+                        <td class="text-center">Até 48h</td>
+                        <td class="text-center">Declaração da entidade ou
+                          ata de posse com assinaturas
+                          dos presentes</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <h6 class="text-center my-3">*Limite de aproveitamento para cada ocorrência das atividades indicadas.</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseHoras7" aria-expanded="false" aria-controls="panelsStayOpen-collapseHoras7">
+              Complementar em Outras Atividades
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseHoras7" class="accordion-collapse collapse" style="">
+            <div class="accordion-body">
+              <div>
+                <h6 class="text-center my-4">O limite máximo de acumulação de horas para este conjunto de atividades é de até 48
+                  horas.</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
     </main>
 
 
