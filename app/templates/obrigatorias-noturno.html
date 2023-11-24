@@ -32,31 +32,13 @@
                   <li class="nav-item mx-2">
                       <a class="nav-link btn link-texto activo" href="{% url 'calculadora-turno' %}">Calculadora</a>
                   </li>                     
-              </ul>
+                </ul>
               </div>
             </div>
           </nav>      
     </header>
-    <main>
-        <section class="container my-5">
-            <h2 class="text-center my-5">Selecione seu turno:</h2>
-            <div class="d-flex justify-content-center gap-5">
-                <a href="{% url 'diurno' %}" style="color:black;" class="d-flex flex-column align-items-center justify-content-center">
-                  <div class="card-diurno d-flex justify-content-center align-items-center flex-column">
-                      <img src="{% static './img/iconesol.png' %}" alt="" class="align-self-start sol-diurno">
-                      <img src="{% static './img/blocodiurnotransp.png' %}" alt="" style="width: 16rem;" class="bloco-diurno">
-                  </div>
-                  <h3 class="my-3">Diurno</h3>
-                </a>
-                <a href="{% url 'noturno' %}" style="color:black;" class="d-flex flex-column align-items-center justify-content-center">
-                  <div class="card-diurno d-flex justify-content-center align-items-center flex-column">
-                      <img src="{% static './img/iconelua.png' %}" alt="" class="align-self-start sol-diurno">
-                      <img src="{% static './img/bloconoturnotransp.png' %}" alt="" style="width: 16rem;" class="bloco-diurno">
-                  </div>
-                  <h3 class="my-3">Noturno</h3>
-                </a>
-            </div>
-        </section>
+    <main class="my-5 text-center">
+        <h1>FLUXOS DE SELEÇÃO DE DISCIPLINAS SERÃO EXIBIDOS AQUI</h1>
     </main>
 </body>
 </html>

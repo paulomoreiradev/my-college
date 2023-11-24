@@ -68,3 +68,9 @@ def o_projeto(request):
 
 def calculadora_turno(request):
     return render(request, "calculadora-turno.html")
+
+def obrigatorias_diurno (request):
+    return render(request, "obrigatorias-diurno.html")
+
+def obrigatorias_noturno (request):
+    return render(request, "obrigatorias-noturno.html")

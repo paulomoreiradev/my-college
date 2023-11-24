@@ -5,6 +5,10 @@ body {
     background-color: #F5F5F5;
 }
 
+a {
+    text-decoration: none;
+}
+
 p {
     font-family: 'Montserrat', sans-serif;
 }
@@ -23,6 +27,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn {
     background-color: #1FFED0;
+    color: #0B0A48;
+    font-weight: 700;
+}
+
+.btn:hover {
+    background-color: #0B0A48;
+    color: #1FFED0;
 }
 
 .bg-verde {
