@@ -1,5 +1,5 @@
 {% load static %}
-
+{% load crispy_forms_tags %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,8 +37,109 @@
             </div>
           </nav>      
     </header>
-    <main class="my-5 text-center">
-        <h1>FLUXOS DE SELEÇÃO DE DISCIPLINAS SERÃO EXIBIDOS AQUI</h1>
+    <main>
+      <section class="container mt-5">
+          <h2 class="text-center mb-5">Selecione as disciplinas obrigatórias <br> cursadas:</h2>
+
+          <div class="d-flex justify-content-between align-items-center flex-wrap mb-5">
+
+              <div class="card-obritagoria p-3">
+                <h4>1º Semestre</h4>
+                <form id="form_semestre1" method="post" enctype="multipart/form-data" class="d-flex justify-content-center align-items-center flex-column">
+                  {% csrf_token %}
+                  {{ semestre1_form.as_p }}
+                </form>
+              </div>
+
+              <div class="card-obritagoria p-3">
+                <h4>2º Semestre</h4>
+                <form id="form_semestre2" method="post" enctype="multipart/form-data" class="d-flex justify-content-center align-items-center flex-column">
+                  {% csrf_token %}
+                  {{ semestre2_form.as_p }}
+                </form>
+              </div>
+
+              <div class="card-obritagoria p-3">
+                <h4>3º Semestre</h4>
+                <form id="form_semestre3" method="post" enctype="multipart/form-data" class="d-flex justify-content-center align-items-center flex-column">
+                  {% csrf_token %}
+                  {{ semestre3_form.as_p }}
+                </form>
+              </div>
+
+          </div>
+
+          <div class="d-flex justify-content-between align-items-center mb-5">
+
+            <div class="card-obritagoria p-3">
+              <h4>4º Semestre</h4>
+              <form id="form_semestre4" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ semestre4_form.as_p }}
+              </form>
+            </div>
+
+            <div class="card-obritagoria p-3">
+              <h4>5º Semestre</h4>
+              <h6>O 5º semestre não possui <br> disciplinas obrigatórias</h6>
+            </div>
+
+            <div class="card-obritagoria p-3">
+              <h4>6º Semestre</h4>
+              <form id="form_semestre6" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ semestre6_form.as_p }}
+              </form>
+            </div>
+
+        </div>
+
+
+        <div class="d-flex justify-content-between align-items-center mb-5">
+
+          <div class="card-obritagoria p-3">
+            <h4>7º Semestre</h4>
+            <form id="form_semestre7" method="post" enctype="multipart/form-data">
+              {% csrf_token %}
+              {{ semestre7noturno_form.as_p }}
+            </form>
+          </div>
+
+          <div class="card-obritagoria p-3">
+            <h4>8º Semestre</h4>
+            <form id="form_semestre8" method="post" enctype="multipart/form-data">
+              {% csrf_token %}
+              {{ semestre8noturno_form.as_p }}
+            </form>
+          </div>
+
+          <div class="card-obritagoria p-3">
+            <h4>9º Semestre</h4>
+            <form id="form_semestre9" method="post" enctype="multipart/form-data">
+              {% csrf_token %}
+              {{ semestre9noturno_form.as_p }}
+            </form>
+          </div>
+      </div>
+
+      <div class="d-flex justify-content-center mb-5">
+        <button onclick="submitAllForms()" class="btn w-25 py-3 mt-3" type="submit">Enviar</button>
+      </div>
+
+      </section>
     </main>
+
+    <script>
+      submitAllForms = function(){
+        console.log("Funciona");
+        document.getElementById('form_semestre1').submit();
+        document.getElementById('form_semestre2').submit();
+        document.getElementById('form_semestre2').submit();
+        document.getElementById('form_semestre4').submit();
+        document.getElementById('form_semestre6').submit();
+        document.getElementById('form_semestre7').submit();
+        document.getElementById('form_semestre8').submit();
+      }
+    </script>
 </body>
 </html>
