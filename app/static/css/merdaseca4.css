@@ -17,6 +17,36 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Nunito';
     font-weight: 700;
 }
+.accordion-button {
+    background-color: #0B0A48;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #F071C0;
+}
+
+.accordion-button:focus {
+    border-color: #1FFED0;
+    box-shadow: 0 0 0 0.35rem rgba(31, 254, 208, 0.25);
+}
+
+.accordion-body {
+    background-color: #8584FF;
+}
+
+.list-group-item {
+    border-color: transparent;
+    background-color: transparent;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid #1FFED0;
+    text-align: center;
+}
+
 .navbar {
     background-color: #F071C0;
 }
@@ -49,6 +79,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 400px;
     background-color: #8584FF;
 }
+
 .activo {
     background-color: #0B0A48;
     color:#1FFED0;

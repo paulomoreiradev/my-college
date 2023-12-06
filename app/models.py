@@ -47,6 +47,9 @@ class Aluno(models.Model):
     matricula = models.CharField(max_length=10)
     curso = models.ForeignKey(Curso, on_delete=models.CASCADE, null=True)
 
+    def __str__(self):
+        return self.nome
+
 class Conclusao(models.Model):
     id = models.AutoField(primary_key=True)
     aluno = models.ForeignKey(Aluno, on_delete=models.CASCADE)

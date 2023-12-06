@@ -38,32 +38,15 @@
           </nav>      
     </header>
     <main>
-      <section class="container my-5">
-        
-        <div class="text-center my-5">
-            <h2 class="mb-5">Como funcionam as eletivas?</h2>
-            <p>São disciplinas que não fazem parte do perfil curricular do curso, mas são necessárias para uma ampliação da formação do aluno. O aluno pode escolher entre uma certa quantidade de matérias, sendo obrigado a cumpri-las para completar a carga horária total do curso. Como não são específicas em sua obrigatoriedade, o aluno pode escolhê-las com base em suas próprias competências e habilidades.</p>
+      <section class="my-5 text-center d-flex justify-content-center flex-column align-items-center">
+        <h1 class="mb-5">Selecione as disciplinas optativas cursadas:</h1>
+        <div class="card-optativa p-5">
+          <form action = "" method = "post" class="d-flex flex-wrap justify-content-center align-items-center gap-3">
+              {% csrf_token %}
+              {{form.as_p}}
+              <button onclick="submitAllForms()" class="btn w-25 py-3 mt-3" type="submit">Concluir</button>
+          </form>
         </div>
-
-        <form action="" method="post" enctype="multipart/form-data">
-          {% csrf_token %}
-          <div class="d-flex justify-content-center align-items-center flex-column">
-              <h2 class="my-5 text-center">Selecione abaixo as disciplinas já <br>cursadas</h2>
-              <div class="card-eletiva">
-                  <h5 class="mt-3">4º Semestre</h5>
-                  <div class="box-form d-flex flex-wrap justify-content-around align-items-center p-3">
-                      {{eletivas4_form.as_p}}
-                  </div>
-              </div>
-              <div class="card-eletiva">
-                  <h5 class="mt-3">5º Semestre</h5>
-                  <div class="box-form d-flex flex-wrap justify-content-center align-items-center p-3 gap-1">
-                      {{eletivas5_form.as_p}}
-                  </div>
-              </div>
-              <button class="btn w-25 py-3 mt-3" type="submit">Enviar</button>
-          </div>
-        </form>  
       </section>
     </main>
 </body>

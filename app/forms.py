@@ -82,6 +82,36 @@ class ObrigatoriasS6Form(forms.Form):
                     required=False
                 )
 
+class ObrigatoriasS7DiurnoForm:
+    def __init__(self, *args, **kwargs):
+        semestre7_diurno = Semestre.objects.get(id=7)
+        disciplinas7_diurno = semestre7_diurno.disciplinas.all()
+        super(ObrigatoriasS7DiurnoForm, self).__init__(*args, **kwargs)
+
+        for obj in disciplinas7_diurno:
+            if obj.tipo == 'O':
+                field_name = f'is_selected_{obj.id}'
+                self.fields[field_name] = forms.BooleanField(
+                    label=obj.nome,  # Replace with the actual field you want to display
+                    initial=obj.is_selected if hasattr(obj, 'is_selected') else False,
+                    required=False
+                )
+
+class ObrigatoriasS8DiurnoForm:
+    def __init__(self, *args, **kwargs):
+        semestre8_diurno = Semestre.objects.get(id=8)
+        disciplinas8_diurno = semestre8_diurno.disciplinas.all()
+        super(ObrigatoriasS8DiurnoForm, self).__init__(*args, **kwargs)
+
+        for obj in disciplinas8_diurno:
+            if obj.tipo == 'O' and not obj.nome == 'ATIVIDADES COMPLEMENTARES':
+                field_name = f'is_selected_{obj.id}'
+                self.fields[field_name] = forms.BooleanField(
+                    label=obj.nome,  # Replace with the actual field you want to display
+                    initial=obj.is_selected if hasattr(obj, 'is_selected') else False,
+                    required=False
+                )
+
 class ObrigatoriasS7NoturnoForm(forms.Form):
     def __init__(self, *args, **kwargs):
         semestre7_noturno = Semestre.objects.get(id=9)
