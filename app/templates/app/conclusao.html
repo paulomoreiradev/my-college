@@ -41,9 +41,14 @@
 
     <main class="" style="">
         <section class="container my-5 d-flex justify-content-center flex-column">
-            <h2 class="text-center mt-5" style="font-size: 40px">Seu progresso no curso:</h2>
-            <div class="my-5">
-                <canvas id="myChart" width="400" height="400"></canvas>
+            <h2 class="text-center mb-5" style="font-size: 40px">Resultados:</h2>
+            <div>
+                <h5 class="text-center">Progresso por Categoria</h5>
+                <p class="text-center">Abaixo você encontra o seus resultados por categoria dentro do curso (em porcentagem).</p>
+                <p class="text-center">Da esquerda para a direita, na primeira barra, em rosa, você encontra a porcentagem de suas horas Obrigatórias já concluidas. Já na segunda barra, em verde, você encontra a porcentagem de suas horas Eletivas já concluídas. Por último, na barra em lilás, você encontra a porcentagem de suas horas Optativas já concluídas. </p>
+            </div>
+            <div class="mb-5 d-flex justify-content-center align-items-center flex-column">
+                <canvas id="categoryChart" width="300" height="300"></canvas>               
             </div>
         </section>        
     </main>
@@ -59,29 +64,36 @@
     var completedEletivas = {{ eletivas_sum }};
     var completedObrigatorias = {{ obrigatorias_sum }};
     var completedOptativas = {{ optativas_sum }};
+    var totalConcluido = {{total_sum}};
 
     console.log(completedObrigatorias)
+    console.log(totalConcluido)
 
     // Calculate the percentage completed for each category
     var percentageCompletedEletivas = {{eletivas_percentage}}
     var percentageCompletedObrigatorias = {{obrigatorias_percentage}}
     var percentageCompletedOptativas = {{optativas_percentage}}
+    var percentageTotal = (totalConcluido / totalDoCurso)*100
+
+    console.log(percentageTotal)
 
     // Create a Chart.js vertical bar chart
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var myChart = new Chart(ctx, {
+    var ctx = document.getElementById('categoryChart').getContext('2d');
+    var categoryChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['Obrigatórias', 'Eletivas', 'Optativas'],
+            labels: ['Total do Curso','Obrigatórias', 'Eletivas', 'Optativas'],
             datasets: [{
                 label: 'Progresso',
-                data: [percentageCompletedObrigatorias, percentageCompletedEletivas,  percentageCompletedOptativas],
+                data: [percentageTotal, percentageCompletedObrigatorias, percentageCompletedEletivas,  percentageCompletedOptativas],
                 backgroundColor: [
+                    'rgba(11, 10, 72, 1)',
                     'rgba(240, 113, 192, 1)',
                     'rgba(31, 254, 208, 1)',                    
                     'rgba(133, 132,	255, 1)',
                 ],
                 borderColor: [
+                    'rgba(11, 10, 72, 1)',
                     'rgba(240, 113, 192, 1)',
                     'rgba(31, 254, 208, 1)',
                     'rgba(133, 132,	255, 1)',

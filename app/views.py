@@ -5,7 +5,8 @@ from django.db.models import Sum
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse_lazy, reverse
 from app.forms import (AlunoForm, ObrigatoriasS1Form, ObrigatoriasS2Form,ObrigatoriasS3Form, ObrigatoriasS4Form,
- ObrigatoriasS6Form,ObrigatoriasS7DiurnoForm, ObrigatoriasS8DiurnoForm, ObrigatoriasS7NoturnoForm, ObrigatoriasS8NoturnoForm, ObrigatoriasS9NoturnoForm, Eletivas4Form, Eletivas5Form, OptativasForm
+ ObrigatoriasS6Form,ObrigatoriasS7DiurnoForm, ObrigatoriasS8DiurnoForm, ObrigatoriasS7NoturnoForm, ObrigatoriasS8NoturnoForm, ObrigatoriasS9NoturnoForm, Eletivas4Form,
+ Eletivas5Form, OptativasForm, HorasComplementaresForm,
  )
 from app.models import Semestre, Disciplina, Aluno, Conclusao
 def index(request):    
@@ -176,7 +177,7 @@ class ObrigatoriasNoturnoView(TemplateView):
 
 
 class EletivasDiurnoView(TemplateView):
-    template_name = "eletivas_diurno_form.html"
+    template_name = "diurno/eletivas_diurno_form.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)        
@@ -214,7 +215,7 @@ class EletivasDiurnoView(TemplateView):
         return HttpResponseRedirect(reverse('optativas-diurno'))
     
 class EletivasNoturnoView(TemplateView):
-    template_name = "eletivas_noturno_form.html"
+    template_name = "noturno/eletivas_noturno_form.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)        
@@ -254,17 +255,10 @@ class EletivasNoturnoView(TemplateView):
 
 class OptativasDiurnoView(FormView):
     form_class = OptativasForm
-    success_url = reverse_lazy("resultado")
-    template_name = "optativas_diurno_form.html"
+    success_url = reverse_lazy("horas-diurno")
+    template_name = "diurno/optativas_diurno_form.html"
 
-    def form_valid(self, form):
-        # Your form processing logic here
 
-        # Set the success URL with a specific pk
-        specific_pk = 194  # Replace with your specific pk or logic to determine it
-        self.success_url = reverse_lazy('resultado', args=[specific_pk])
-
-        return super().form_valid(form)
     
 
     def post(self, request, *args, **kwargs):
@@ -290,17 +284,8 @@ class OptativasDiurnoView(FormView):
         
 class OptativasNoturnoView(FormView):
     form_class = OptativasForm
-    success_url = reverse_lazy("resultado")
-    template_name = "optativas_noturno_form.html"
-
-    def form_valid(self, form):
-        # Your form processing logic here
-
-        # Set the success URL with a specific pk
-        specific_pk = 195  # Replace with your specific pk or logic to determine it
-        self.success_url = reverse_lazy('resultado', args=[specific_pk])
-
-        return super().form_valid(form)    
+    success_url = reverse_lazy("horas-noturno")
+    template_name = "noturno/optativas_noturno_form.html"  
 
     def post(self, request, *args, **kwargs):
         form = self.get_form()
@@ -322,7 +307,36 @@ class OptativasNoturnoView(FormView):
 
         else:
                 return HttpResponse("404")
-        
+
+
+class HorasComplementaresDiurnoView (FormView):
+    form_class = HorasComplementaresForm
+    success_url = reverse_lazy("resultado")
+    template_name = "diurno/horas_diurno_complementares.html"
+
+    def form_valid(self, form):
+        # Your form processing logic here
+
+        # Set the success URL with a specific pk
+        specific_pk = 194  # Replace with your specific pk or logic to determine it
+        self.success_url = reverse_lazy('resultado', args=[specific_pk])
+
+        return super().form_valid(form)
+
+class HorasComplementaresNoturnoView (FormView):
+    form_class = HorasComplementaresForm
+    success_url = reverse_lazy("resultado")
+    template_name = "noturno/horas_noturno_complementares.html"
+
+    def form_valid(self, form):
+        # Your form processing logic here
+
+        # Set the success URL with a specific pk
+        specific_pk = 195  # Replace with your specific pk or logic to determine it
+        self.success_url = reverse_lazy('resultado', args=[specific_pk])
+
+        return super().form_valid(form)  
+
 class ConclusaoView(DetailView):
     model = Conclusao
     template_name = "app/conclusao.html"
@@ -340,6 +354,7 @@ class ConclusaoView(DetailView):
         eletivas_sum = self.object.disciplinas_concluidas.filter(tipo='E').aggregate(Sum('creditos'))['creditos__sum'] or 0
         obrigatorias_sum = self.object.disciplinas_concluidas.filter(tipo='O').aggregate(Sum('creditos'))['creditos__sum'] or 0
         optativas_sum = self.object.disciplinas_concluidas.filter(tipo='OP').aggregate(Sum('creditos'))['creditos__sum'] or 0
+        total_sum = eletivas_sum + obrigatorias_sum + optativas_sum
 
         # Calculate the percentages
         eletivas_percentage = (eletivas_sum / total_eletivas) * 100 if total_eletivas > 0 else 0
@@ -349,6 +364,7 @@ class ConclusaoView(DetailView):
         context['eletivas_sum'] = eletivas_sum
         context['obrigatorias_sum'] = obrigatorias_sum
         context['optativas_sum'] = optativas_sum
+        context['total_sum'] = total_sum
 
         context['eletivas_percentage'] = eletivas_percentage
         context['obrigatorias_percentage'] = obrigatorias_percentage

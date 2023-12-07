@@ -42,11 +42,21 @@
         <h1 class="mb-5">Selecione as disciplinas optativas cursadas:</h1>
         <div class="card-optativa p-5">
           <form action = "" method = "post" class="d-flex flex-wrap justify-content-center align-items-center gap-3">
-              {% csrf_token %}
+            {% csrf_token %}
+            <div class="d-flex flex-wrap align-items-center justify-content-center gap-4">
               {{form.as_p}}
-              <button onclick="submitAllForms()" class="btn w-25 py-3 mt-3" type="submit">Concluir</button>
+            </div>
+            <div class="w-50">
+              <h5 class="mb-3">Fez Optativa Livre? <br> Informe a carga horária abaixo</h5>
+              <input type="number" id="numericField" name="numericField" min="0" max="128" class="form-control mb-2">
+              <label for="numericField" class="form-label">A quantidade máxima de horas em Optativas Livres é 128 horas</label>
+            </div>
+          <div class="w-100">
+            <button class="btn w-25 py-3 mt-3" type="submit">Concluir</button>
+          </div>
           </form>
         </div>
+
       </section>
     </main>
 </body>

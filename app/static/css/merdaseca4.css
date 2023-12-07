@@ -18,24 +18,37 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 .accordion-button {
-    background-color: #0B0A48;
-    color: #fff;
+    background-color: #8584FF;
+    color: #0B0A48;
     font-size: 20px;
     font-weight: 700;
     text-align: center;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #F071C0;
+    background-color: rgb(26, 231, 190);
 }
 
 .accordion-button:focus {
     border-color: #1FFED0;
-    box-shadow: 0 0 0 0.35rem rgba(31, 254, 208, 0.25);
+    box-shadow: 0 0 0 0.35rem rgba(240, 113, 192, 0.7);
+}
+
+th {
+    background-color: #0B0A48;
+}
+
+.table>:not(caption)>*>* {
+    background-color: #5555a7;
+    color: #fff;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+background-color: #8584FF;
 }
 
 .accordion-body {
-    background-color: #8584FF;
+    background-color: #1FFED0;
 }
 
 .list-group-item {
@@ -184,7 +197,7 @@ label {
     border-radius: 15px;
 }
 
-.card-optativa > form > p {
+.card-optativa > form > div > p {
     background-color: #F5F5F6;
     padding: 1rem 1.25rem;
     width: 220px;

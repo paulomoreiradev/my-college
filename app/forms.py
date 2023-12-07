@@ -204,4 +204,52 @@ class OptativasForm(forms.Form):
                 )
 
 class HorasComplementaresForm(forms.Form):
-    ...
+    categoria1 = forms.IntegerField(
+        label='Iniciação à Docência, Pesquisa e/ou Extensão',
+        required=False,
+        min_value=0,  # Set a minimum value if necessary
+        max_value=96,
+        help_text='Máximo de 96 horas para esta categoria'
+    )
+    categoria2 = forms.IntegerField(
+        label='Participação e/ou Organização de Eventos',
+        required=False,
+        min_value=0,  # Set a minimum value if necessary
+        max_value=32,
+        help_text='Máximo de 32 horas para esta categoria'
+    )
+    categoria3 = forms.IntegerField(
+        label='Atividades Artístico-Culturais e Esportivas',
+        required=False,
+        min_value=0,  # Set a minimum value if necessary
+        max_value=80,
+        help_text='Máximo de 80 horas para esta categoria'
+    )
+    categoria4 = forms.IntegerField(
+        label='Experiências Ligadas à Formação Profissional',
+        required=False,
+        min_value=0,  # Set a minimum value if necessary
+        max_value=64,
+        help_text='Máximo de 64 horas para esta categoria'
+    )
+    categoria5 = forms.IntegerField(
+        label='Produção Técnica e/ou Científica',
+        required=False,
+        min_value=0,  # Set a minimum value if necessary
+        max_value=96,
+        help_text='Máximo de 96 horas para esta categoria'
+    )
+    categoria6 = forms.IntegerField(
+        label='Vivências de Gestão',
+        required=False,
+        min_value=0,  # Set a minimum value if necessary
+        max_value=48,
+        help_text='Máximo de 48 horas para esta categoria'
+    )
+    categoria7 = forms.IntegerField(
+        label='Experiências Ligadas à Formação Profissional',
+        required=False,
+        min_value=0,  # Set a minimum value if necessary
+        max_value=48,
+        help_text='Máximo de 48 horas para esta categoria'
+    )

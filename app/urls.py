@@ -14,5 +14,7 @@ urlpatterns = [
     path("calculadora/noturno/eletivas", views.EletivasNoturnoView.as_view(), name="eletivas-noturno"),
     path("calculadora/diurno/optativas", views.OptativasDiurnoView.as_view(), name="optativas-diurno"),
     path("calculadora/noturno/optativas", views.OptativasNoturnoView.as_view(), name="optativas-noturno"),
+    path("calculadora/diurno/horas-complementares", views.HorasComplementaresDiurnoView.as_view(), name="horas-diurno"),
+    path("calculadora/noturno/horas-complementares", views.HorasComplementaresNoturnoView.as_view(), name="horas-noturno"),
     path("calculadora/resultado/<int:pk>/", views.ConclusaoView.as_view(), name="resultado"),
 ]
