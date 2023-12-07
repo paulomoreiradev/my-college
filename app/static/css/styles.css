@@ -64,6 +64,11 @@ background-color: #8584FF;
     background-color: #F071C0;
 }
 
+.container-calculadora {
+    background-color: #F071C0;
+    border-radius: 10px;
+}
+
 .link-texto {
     font-weight: 700;
 }
@@ -79,7 +84,7 @@ background-color: #8584FF;
     color: #1FFED0;
 }
 
-.bg-verde {
+.banner{
     background-color: #8584FF;
 }
 
